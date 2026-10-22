@@ -30,7 +30,9 @@ Each algorithm records a list of snapshots ("steps") instead of animating direct
 ## Problems :warning:
 
 There is some inconsistency in the code where I would mention **Parent** then **Node**.\
-Usually, *parent* and *root* would mean the same and *left, right, l, r, child* would mean the same.
+Usually, *parent* and *root* would mean the same and *left, right, l, r, child* would mean the same respectively.
+* left & l for left child nodes.
+* right & r for right child nodes.
 
 ## Run locally :computer:
 
