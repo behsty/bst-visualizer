@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BST Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>BST Visualizer</h1>
+    <p class="sub">Step through search (LC 700), insert (LC 701) and validate (LC 98) one decision at a time.</p>
+  </header>
+
+  <main>
+    <section class="card controls">
+      <div class="row">
+        <label>Value
+          <input id="val" type="number" value="6">
+        </label>
+        <button id="btn-search" class="primary">Search</button>
+        <button id="btn-insert" class="primary">Insert</button>
+        <button id="btn-validate" class="primary">Validate</button>
+      </div>
+      <div class="row">
+        <label class="grow">Build from list
+          <input id="list" type="text" value="8, 3, 10, 1, 6, 14, 4, 7, 13">
+        </label>
+        <button id="btn-build">Build</button>
+        <button id="btn-random">Random</button>
+        <button id="btn-trick" title="Looks valid locally, but isn't a BST">Trick tree</button>
+        <button id="btn-clear">Clear</button>
+      </div>
+    </section>
+
+    <section class="stage">
+      <div class="card tree-card">
+        <div class="tree-wrap">
+          <svg id="tree" role="img" aria-label="Binary search tree"></svg>
+        </div>
+        <p id="msg" class="msg"></p>
+        <div class="row playback">
+          <button id="btn-first" aria-label="First step">⏮</button>
+          <button id="btn-prev">◀ Prev</button>
+          <button id="btn-play">▶ Play</button>
+          <button id="btn-next">Next ▶</button>
+          <select id="speed" aria-label="Playback speed">
+            <option value="1600">Slow</option>
+            <option value="1000" selected>Normal</option>
+            <option value="500">Fast</option>
+          </select>
+          <span id="counter" class="counter"></span>
+        </div>
+      </div>
+
+      <div class="card code-card">
+        <h2 id="code-title">Code</h2>
+        <pre id="code" class="code"></pre>
+        <ul class="legend">
+          <li><span class="dot active"></span>Current node</li>
+          <li><span class="dot path"></span>Visited path</li>
+          <li><span class="dot ok"></span>Passed / found</li>
+          <li><span class="dot bad"></span>Failed</li>
+          <li><span class="dot new"></span>Newly inserted</li>
+        </ul>
+        <p class="hint">Keyboard: ← → to step, Space to play.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="bst.js"></script>
+  <script src="render.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
