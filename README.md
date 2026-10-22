@@ -1,13 +1,13 @@
 # What I understood and How I understood it
 
-I have learned that Binary Search uses a tactic where it searches the middle point of each subarray to look for its target value and returns index value.
-An animation by Y. Daniel Liang was very helpful in visualizing the basic concepts of binary search:
+I have learned that Binary Search uses a tactic where it searches the middle point of each subarray to look for its target value and returns index value.\
+An animation by Y. Daniel Liang was very helpful in visualizing the basic concepts of binary search:\
 https://yongdanielliang.github.io/animation/web/BinarySearchNew.html
 
-**The difference between Binary Search and Binary Search Tree**
-They both use the same idea of comparing and throwing away half, except one is algorithm and one is data structure.
-Binary search is an **algorithm** that runs on a **sorted** array.
-BST is a **data structure** with nodes linked by pointers, arranged so that left child < parent < right child in terms of value.
+**The difference between Binary Search and Binary Search Tree**\
+They both use the same idea of comparing and throwing away half, except one is algorithm and one is data structure.\
+Binary search is an **algorithm** that runs on a **sorted** array.\
+BST is a **data structure** with nodes linked by pointers, arranged so that left child < parent < right child in terms of value.\
 Learning linked lists helped me to solve BST LeetCodes quicker.
 
 # BST Visualizer
@@ -29,7 +29,7 @@ Each algorithm records a list of snapshots ("steps") instead of animating direct
 
 ## Problems
 
-There is some inconsistency in the code where I would mention **Parent** then **Node**.
+There is some inconsistency in the code where I would mention **Parent** then **Node**.\
 Usually, *parent* and *root* would mean the same and *left, right, l, r, child* would mean the same.
 
 ## Run locally
